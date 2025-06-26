@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.course {
+  width: 450px;
+}
+.chapter {
+  position: relative;
+  cursor: pointer;
+}
+.course-list .chapter-title {
+  border: 1px solid gray;
+  background-color: rgba(55, 55, 55);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.chapter-title:has(input:checked) ~ .lessons-list {
+  display: block;
+}
+.course-list .lessons-list {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+  z-index: -1;
+}
+.lessons-list li {
+  border: 1px solid gray;
+  display: inline-block;
+  padding: 15px;
+  font-size: 16px;
+  width: 100%;
+}
