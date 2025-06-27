@@ -33,6 +33,7 @@ li {
   position: sticky;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 
 .chapter-title:has(input:checked) ~ .lessons-list {
