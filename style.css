@@ -18,7 +18,6 @@ li {
 }
 .chapter {
   position: relative;
-  cursor: pointer;
 }
 .course-list .chapter-title {
   border: 1px solid gray;
